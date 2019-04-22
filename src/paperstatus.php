@@ -550,9 +550,9 @@ class PaperStatus {
         if (@$pj->title === ""
             || (@$pj->title === null && (!$old_pj || !$old_pj->title)))
             $this->set_error_html("title", "Each paper must have a title.");
-        if (@$pj->abstract === ""
-            || (@$pj->abstract === null && (!$old_pj || !$old_pj->abstract)))
-            $this->set_error_html("abstract", "Each paper must have an abstract.");
+        //if (@$pj->abstract === ""
+            //|| (@$pj->abstract === null && (!$old_pj || !$old_pj->abstract)))
+            //$this->set_error_html("abstract", "Each paper must have an abstract.");
         if ((is_array(@$pj->authors) && !count($pj->authors))
             || (@$pj->authors === null && (!$old_pj || !count($old_pj->authors))))
             $this->set_error_html("author", "Each paper must have at least one author.");

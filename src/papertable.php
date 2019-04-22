@@ -1921,8 +1921,8 @@ class PaperTable {
             && $this->editable !== "f")
             $this->editable_anonymity();
 
-        echo $spacer;
-        $this->editable_abstract();
+        //echo $spacer;
+        //$this->editable_abstract();
 
         // Topics and options
         echo $spacer;
